@@ -5,10 +5,7 @@ SIF is a new training method for person re-identification (Re-ID) networks. Give
 
 This project is the implementation of our IEEE TIP paper - [SIF: Self-Inspirited Feature Learning for Person Re-Identification](https://ieeexplore.ieee.org/document/9024230) on some commonly used baseline networks. Our code is adapted from the open-reid library (https://github.com/Cysu/open-reid).
 
-
-## Performance
-
-### Datasets
+## Datasets
 * [Market-1501](http://www.liangzheng.com.cn/Project/project_reid.html)
   
     Download using: 
@@ -40,16 +37,6 @@ The data structure should look like:
   ```
   Here each *.txt file consists lines of the format: image file name, person id, camera id.
   train.txt consists images from bounding_box_train/, val.txt and query.txt consists images from query/, and gallery.txt consists images from bounding_box_test/.
-  
-        
-### Baseline ReID methods
-
-+ [ResNet](https://arxiv.org/abs/1512.03385). We choose two configurations: ResNet50 and ResNet152.
-+ [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161
-
-
-NOTICE: The MGN(reproduced) is the reproduction of [MGN](https://arxiv.org/pdf/1804.01438.pdf). To our best knowledge, the official implementation of MGN has not released yet. Hence, the **MGN_PTL**
-network used the MGN(reproduced) as backbone network. The code for MGN(reproduced) is in **mgn.py** 
 
 ## RUN
 ### Prerequisites
@@ -62,6 +49,11 @@ network used the MGN(reproduced) as backbone network. The code for MGN(reproduce
 + scipy
 + numpy
 + scikit_learn
+
+### Baseline ReID methods
+
++ [ResNet](https://arxiv.org/abs/1512.03385). We choose two configurations: ResNet50 and ResNet152.
++ [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161.
 
 ### Train
 We provie two training methods: plain and sif.
