@@ -1,5 +1,4 @@
 CUDA_VISIBLE_DEVICES=0 python main.py \
---project_name $project_name \
 --dataset 'market1501' \
 --b 48 \
 --lr 0.1 \
