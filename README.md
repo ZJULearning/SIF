@@ -50,7 +50,7 @@ The data structure should look like:
 
 <table>
   <tr>
-    <th>Model + Training_method</th> 
+    <th>Models + Training_method</th> 
     <th colspan="2">Market-1501</th>
     <th colspan="2">DukeMTMC-reID</th>
     <th colspan="2">CUHK03(Detected)</th>
@@ -174,36 +174,17 @@ network used the MGN(reproduced) as backbone network. The code for MGN(reproduce
 + numpy
 + scikit_learn
 
-### GPU usage
-
-We used one Tesla P100 GPU in our experiments
-* To run the MGN with batchid=4 and batchimage=4 cost 7819 MiB
-* To run the MGN_PTL with batchid=4 and batchimage=4 cost 8819 MiB
-
 ### Train
-You can specify more parameters in opt.py
+We provie two training methods: plain and sif.
 
-* Train MGN_PTL
-  ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn_ptl --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
-  ```
-* Train MGN
+* Train using plain method (traditional SGD optimization)
   ```
   CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
   ```
-
-### Evaluate
-Use pretrained weight or your trained weight
-
-* Evaluate MGN_PTL
+* Train using sif method (our proposed SIF optimization)
   ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn_ptl --mode evaluate --usegpu --weight <path/to/weight/weight_name.pt> --data_path <path/to/Market-1501-v15.09.15>
-   ```
-* Evaluate MGN
-  ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode evaluate --usegpu --weight <path/to/weight/weight_name.pt> --data_path <path/to/Market-1501-v15.09.15>
-   ```
-   
+  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
+  ``` 
 ## Reference
 
 Reference to cite when you use SIF in a research paper:
