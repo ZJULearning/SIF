@@ -72,9 +72,9 @@ We provie two training methods: plain and sif.
   <tr>
     <th>Models + Training_method</th> 
     <th colspan="2">Market-1501</th>
-    <th colspan="2">DukeMTMC-reID</th>
-    <th colspan="2">CUHK03(Detected)</th>
     <th colspan="2">CUHK03(Labelled)</th>
+    <th colspan="2">CUHK03(Detected)</th>
+    <th colspan="2">DukeMTMC-reID</th>
   </tr>
   <tr>
     <td></td>
@@ -89,47 +89,47 @@ We provie two training methods: plain and sif.
   </tr>
   <tr>
     <td>ResNet50 + SGD</td>
-    <td>70.51</td>
-    <td>89.34</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>68.8</td>
+    <td>86.5</td>
+    <td>41.3</td>
+    <td>43.2</td>
+    <td>38.8</td>
+    <td>40.3</td>
+    <td>60.0</td>
+    <td>78.8</td>
   </tr>
   <tr>
     <td>ResNet50 + SIF</td>
-    <td>75.70</td>
-    <td>91.20</td>
-    <td>63.80</td>
-    <td>80.50</td>
-    <td>38.60</td>
-    <td>41.70</td>
-    <td>41.00</td>
-    <td>44.40</td>
+    <td>71.8</td>
+    <td>87.9</td>
+    <td>46.9</td>
+    <td>48.2</td>
+    <td>45.3</td>
+    <td>47.1</td>
+    <td>61.6</td>
+    <td>79.3</td>
   </tr>
   <tr>
     <td>DenseNet121 + SGD</td>
-    <td>77.30</td>
-    <td>92.40</td>
-    <td>65.30</td>
-    <td>81.90</td>
-    <td>54.20</td>
-    <td>61.30</td>
-    <td>-</td>
-    <td>-</td>
+    <td>71.6</td>
+    <td>88.3</td>
+    <td>41.1</td>
+    <td>43.7</td>
+    <td>38.1</td>
+    <td>39.7</td>
+    <td>62.0</td>
+    <td>80.3</td>
   </tr>
   <tr>
     <td>DenseNet121 + SIF</td>
-    <td>81.60</td>
-    <td>93.80</td>
-    <td>69.20</td>
-    <td>83.30</td>
-    <td>57.50</td>
-    <td>63.70</td>
-    <td>-</td>
-    <td>-</td>
+    <td>74.8</td>
+    <td>90.3</td>
+    <td>48.5</td>
+    <td>50.6</td>
+    <td>44.8</td>
+    <td>46.6</td>
+    <td>65.3</td>
+    <td>89.5</td>
   </tr>
   <tr>
     <td>ResNet152 + SGD</td>
