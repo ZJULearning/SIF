@@ -179,7 +179,7 @@ We provie two training methods: plain and sif.
 
 ## Reference
 
-Reference to cite when you use SIF in a research paper:
+Please cite our paper when you use SIF in your research:
 
 Wei, Long, Zhenyong Wei, Zhongming Jin, Zhengxu Yu, Jianqiang Huang, Deng Cai, Xiaofei He, and Xian-Sheng Hua. "SIF: Self-Inspirited Feature Learning for Person Re-Identification." IEEE Transactions on Image Processing 29 (2020): 4942-4951.
 
