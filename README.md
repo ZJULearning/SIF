@@ -47,12 +47,12 @@ The data structure should look like:
 + numpy
 + scikit_learn
 
-### Baseline ReID methods
+### Baseline ReID Methods
 
 + [ResNet](https://arxiv.org/abs/1512.03385). We choose two configurations: ResNet50 and ResNet152.
 + [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161.
 
-### Train
+### Train and Evaluate
 We provie two training methods: plain (traditional SGD optimization) and sif (our proposed SIF optimization). The training method could be specified by the argument training_method in run.sh
 
 * Train by running
