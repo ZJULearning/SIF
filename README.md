@@ -50,8 +50,7 @@ The data structure should look like:
 
 <table>
   <tr>
-    <th>Model</th> 
-    <th>Method</th>
+    <th>Model+Method</th> 
     <th colspan="2">Market-1501</th>
     <th colspan="2">DukeMTMC-reID</th>
     <th colspan="2">CUHK03(Detected)</th>
@@ -59,7 +58,6 @@ The data structure should look like:
   </tr>
   <tr>
     <td></td>
-    <td></td>
     <td>mAP</td>
     <td>CMC-1</td>
     <td>mAP</td>
@@ -70,7 +68,6 @@ The data structure should look like:
     <td>CMC-1</td>
   </tr>
   <tr>
-    <td>DML</td>
     <td>DML</td>
     <td>70.51</td>
     <td>89.34</td>
@@ -83,7 +80,6 @@ The data structure should look like:
   </tr>
   <tr>
     <td>HA-CNN</td>
-    <td>HA-CNN</td>
     <td>75.70</td>
     <td>91.20</td>
     <td>63.80</td>
@@ -94,7 +90,6 @@ The data structure should look like:
     <td>44.40</td>
   </tr>
   <tr>
-    <td>PCB</td>
     <td>PCB</td>
     <td>77.30</td>
     <td>92.40</td>
@@ -107,7 +102,6 @@ The data structure should look like:
   </tr>
   <tr>
     <td>PCB+RPP</td>
-    <td>PCB+RPP</td>
     <td>81.60</td>
     <td>93.80</td>
     <td>69.20</td>
@@ -118,7 +112,6 @@ The data structure should look like:
     <td>-</td>
   </tr>
   <tr>
-    <td>MGN</td>
     <td>MGN</td>
     <td>86.90</td>
     <td>95.70</td>
@@ -131,7 +124,6 @@ The data structure should look like:
   </tr>
   <tr>
     <td>MGN(reproduced)</td>
-    <td>MGN(reproduced)</td>
     <td>85.80</td>
     <td>94.60</td>
     <td>77.07</td>
@@ -143,7 +135,6 @@ The data structure should look like:
   </tr>
   <tr>
     <td><b>MGN_PTL</b></td>
-    <td><b>MGN_PTL</b></td>
     <td>87.34</td>
     <td>94.83</td>
     <td>79.16</td>
@@ -154,7 +145,6 @@ The data structure should look like:
     <td>79.79</td>
   </tr>
   <tr>
-    <td><b>MGN_PTL</b></td>
     <td><b>MGN_PTL</b></td>
     <td>87.34</td>
     <td>94.83</td>
