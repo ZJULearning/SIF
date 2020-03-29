@@ -55,12 +55,13 @@ The data structure should look like:
 ### Train and Evaluate
 We provie two training methods: plain (traditional SGD optimization) and sif (our proposed SIF optimization). The training method could be specified by the argument training_method in run.sh
 
-* Train by running
+* Train and Evaluate by running
   ```
   bash run.sh
   ```
 
 ### Results
+Evaluation metric: mAP (%) and CMC-1 (%) 
 
 <table>
   <tr>
@@ -170,6 +171,7 @@ We provie two training methods: plain (traditional SGD optimization) and sif (ou
     <td>84.6</td>
   </tr>
 </table>
+
 
 ## Reference
 
