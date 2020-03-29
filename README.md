@@ -18,9 +18,6 @@ This project is the implementation of our IEEE TIP paper - [SIF: Self-Inspirited
   1. Download cuhk03 dataset from [here](http://www.ee.cuhk.edu.hk/~xgwang/CUHK_identification.html)
   2. Unzip the file and you will get the cuhk03_release dir which include cuhk-03.mat
   3. Download "cuhk03_new_protocol_config_detected.mat" from [here](https://github.com/zhunzhong07/person-re-ranking/tree/master/evaluation/data/CUHK03) and put it with cuhk-03.mat. We need this new protocol to split the dataset.
-  ```
-  python utils/transform_cuhk03.py --src <path/to/cuhk03_release> --dst <path/to/save>
-  ```
   NOTICE: You need to change num_classes in network depend on how many people in your train dataset! e.g. 751 in Market1501.
 
 The data structure should look like:
@@ -56,16 +53,13 @@ The data structure should look like:
 + [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161.
 
 ### Train
-We provie two training methods: plain and sif.
+We provie two training methods: plain (traditional SGD optimization) and sif (our proposed SIF optimization). The training method could be specified by the argument training_method in run.sh
 
-* Train using plain method (traditional SGD optimization)
+* Train by running
   ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
+  bash run.sh
   ```
-* Train using sif method (our proposed SIF optimization)
-  ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
-  ``` 
+
 ### Results
 
 <table>
@@ -182,6 +176,3 @@ We provie two training methods: plain and sif.
 Please cite our paper when you use SIF in your research:
 
 Wei, Long, Zhenyong Wei, Zhongming Jin, Zhengxu Yu, Jianqiang Huang, Deng Cai, Xiaofei He, and Xian-Sheng Hua. "SIF: Self-Inspirited Feature Learning for Person Re-Identification." IEEE Transactions on Image Processing 29 (2020): 4942-4951.
-
-## License
-PTL is MIT-licensed.
