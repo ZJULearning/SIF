@@ -292,5 +292,5 @@ if __name__ == '__main__':
     parser.add_argument('--root_dir', type=str, metavar='PATH',
                         default='./')
     parser.add_argument('--data_dir', type=str, metavar='PATH',
-                        default='/home/zhenyong.wzy/data/data_reid/')
+                        default='/home/data/')
     main(parser.parse_args(),)
