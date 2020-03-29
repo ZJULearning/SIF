@@ -1,7 +1,7 @@
 # SIF: Self-Inspirited Feature Learning for Person Re-Identification
 ## Introduction
 
-SIF is a new training method for person re-identification (Re-ID) networks. It is published recently IEEE TIP - [SIF: Self-Inspirited Feature Learning for Person Re-Identification](https://ieeexplore.ieee.org/document/9024230).
+SIF is a new training method for person re-identification (Re-ID) networks. It is published recently on IEEE TIP - [SIF: Self-Inspirited Feature Learning for Person Re-Identification](https://ieeexplore.ieee.org/document/9024230).
 Given an existing Re-ID network, an auxiliary branch is added into the network only in the training stage, while the structure of the original network stays unchanged during the testing stage. 
 
 This project is the implementation of SIF on some commonly used baseline networks. Our code is adapted from the open-reid library (https://github.com/Cysu/open-reid).
