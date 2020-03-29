@@ -68,7 +68,7 @@ The data structure should look like:
     <td>CMC-1</td>
   </tr>
   <tr>
-    <td>ResNet50+SGD</td>
+    <td>ResNet50 + SGD</td>
     <td>70.51</td>
     <td>89.34</td>
     <td>-</td>
@@ -79,7 +79,7 @@ The data structure should look like:
     <td>-</td>
   </tr>
   <tr>
-    <td>ResNet50+SIF</td>
+    <td>ResNet50 + SIF</td>
     <td>75.70</td>
     <td>91.20</td>
     <td>63.80</td>
@@ -90,7 +90,7 @@ The data structure should look like:
     <td>44.40</td>
   </tr>
   <tr>
-    <td>DenseNet121+SGD</td>
+    <td>DenseNet121 + SGD</td>
     <td>77.30</td>
     <td>92.40</td>
     <td>65.30</td>
@@ -101,7 +101,7 @@ The data structure should look like:
     <td>-</td>
   </tr>
   <tr>
-    <td>DenseNet121+SIF</td>
+    <td>DenseNet121 + SIF</td>
     <td>81.60</td>
     <td>93.80</td>
     <td>69.20</td>
@@ -112,7 +112,7 @@ The data structure should look like:
     <td>-</td>
   </tr>
   <tr>
-    <td>ResNet152+SGD</td>
+    <td>ResNet152 + SGD</td>
     <td>86.90</td>
     <td>95.70</td>
     <td>78.40</td>
@@ -123,7 +123,7 @@ The data structure should look like:
     <td>68.00</td>
   </tr>
   <tr>
-    <td>ResNet152+SIF</td>
+    <td>ResNet152 + SIF</td>
     <td>85.80</td>
     <td>94.60</td>
     <td>77.07</td>
@@ -134,7 +134,7 @@ The data structure should look like:
     <td>74.07</td>
   </tr>
   <tr>
-    <td><b>DenseNet161+SGD</b></td>
+    <td>DenseNet161 + SGD</td>
     <td>87.34</td>
     <td>94.83</td>
     <td>79.16</td>
@@ -145,7 +145,7 @@ The data structure should look like:
     <td>79.79</td>
   </tr>
   <tr>
-    <td><b>DenseNet161+SIF</b></td>
+    <td>DenseNet161 + SIF</td>
     <td>87.34</td>
     <td>94.83</td>
     <td>79.16</td>
