@@ -133,47 +133,47 @@ We provie two training methods: plain and sif.
   </tr>
   <tr>
     <td>ResNet152 + SGD</td>
-    <td>86.90</td>
-    <td>95.70</td>
-    <td>78.40</td>
-    <td>88.70</td>
-    <td>66.00</td>
-    <td>66.80</td>
-    <td>67.40</td>
-    <td>68.00</td>
+    <td>73.0</td>
+    <td>88.1</td>
+    <td>45.5</td>
+    <td>47.3</td>
+    <td>44.7</td>
+    <td>48.2</td>
+    <td>63.4</td>
+    <td>80.9</td>
   </tr>
   <tr>
     <td>ResNet152 + SIF</td>
-    <td>85.80</td>
-    <td>94.60</td>
-    <td>77.07</td>
-    <td>87.70</td>
-    <td>69.41</td>
-    <td>71.64</td>
-    <td>72.96</td>
-    <td>74.07</td>
+    <td>75.8</td>
+    <td>89.6</td>
+    <td>52.3</td>
+    <td>54.0</td>
+    <td>49.5</td>
+    <td>52.9</td>
+    <td>66.0</td>
+    <td>82.6</td>
   </tr>
   <tr>
     <td>DenseNet161 + SGD</td>
-    <td>87.34</td>
-    <td>94.83</td>
-    <td>79.16</td>
-    <td>89.36</td>
-    <td>74.22</td>
-    <td>76.14</td>
-    <td>77.31</td>
-    <td>79.79</td>
+    <td>74.3</td>
+    <td>89.5</td>
+    <td>49.8</td>
+    <td>51.9</td>
+    <td>48.3</td>
+    <td>51.6</td>
+    <td>64.2</td>
+    <td>82.0</td>
   </tr>
   <tr>
     <td>DenseNet161 + SIF</td>
-    <td>87.34</td>
-    <td>94.83</td>
-    <td>79.16</td>
-    <td>89.36</td>
-    <td>74.22</td>
-    <td>76.14</td>
-    <td>77.31</td>
-    <td>79.79</td>
+    <td>78.0</td>
+    <td>91.8</td>
+    <td>55.1</td>
+    <td>58.6</td>
+    <td>51.8</td>
+    <td>54.4</td>
+    <td>68.0</td>
+    <td>84.6</td>
   </tr>
 </table>
 
