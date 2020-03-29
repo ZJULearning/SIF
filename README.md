@@ -217,26 +217,8 @@ Use pretrained weight or your trained weight
 ## Reference
 
 Reference to cite when you use SIF in a research paper:
-	@article{wei2020sif,
-  		title={SIF: Self-Inspirited Feature Learning for Person Re-Identification},
-  		author={Wei, Long and Wei, Zhenyong and Jin, Zhongming and Yu, Zhengxu and Huang, Jianqiang and Cai, Deng and He, Xiaofei and Hua, Xian-Sheng},
-  		journal={IEEE Transactions on Image Processing},
-  		volume={29},
-  		pages={4942--4951},
-  		year={2020},
-  		publisher={IEEE}
-	}
 
-    @inproceedings{ijcai2019-586,
-      title     = {Progressive Transfer Learning for Person Re-identification},
-      author    = {Yu, Zhengxu and Jin, Zhongming and Wei, Long and Guo, Jishun and Huang, Jianqiang and Cai, Deng and He, Xiaofei and Hua, Xian-Sheng},
-      booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
-      publisher = {International Joint Conferences on Artificial Intelligence Organization},             
-      pages     = {4220--4226},
-      year      = {2019},
-      month     = {7},
-      doi       = {10.24963/ijcai.2019/586},
-      url       = {https://doi.org/10.24963/ijcai.2019/586},
-      }
+Wei, Long, Zhenyong Wei, Zhongming Jin, Zhengxu Yu, Jianqiang Huang, Deng Cai, Xiaofei He, and Xian-Sheng Hua. "SIF: Self-Inspirited Feature Learning for Person Re-Identification." IEEE Transactions on Image Processing 29 (2020): 4942-4951.
+
 ## License
 PTL is MIT-licensed.
