@@ -69,7 +69,7 @@ Evaluation metric: mAP (%) and CMC-1 (%).
   <tr>
     <th>Models + Training_method</th> 
     <th colspan="2">Market-1501</th>
-    <th colspan="2">CUHK03(Labelled)</th>
+    <th colspan="2">CUHK03(Labeled)</th>
     <th colspan="2">CUHK03(Detected)</th>
     <th colspan="2">DukeMTMC-reID</th>
   </tr>
