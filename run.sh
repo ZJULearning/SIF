@@ -1,12 +1,12 @@
 CUDA_VISIBLE_DEVICES=0 python main.py \
 --project_name $project_name \
---dataset 'duke-list' \
---b 2 \
+--dataset 'market1501' \
+--b 48 \
 --lr 0.1 \
 --a resnet50 \
 --training_method sif \
 --data_dir <path/to/Market-1501> \
 --features 512 \
---ncls 703 \
+--ncls 751 \
 --step_size 10 \
---epochs 30 
+--epochs 50 
