@@ -45,7 +45,35 @@ The data structure should look like:
 ### Baseline ReID methods
 
 + [ResNet](https://arxiv.org/abs/1512.03385). We choose two configurations: ResNet50 and ResNet152.
-+ [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161.
++ [DenseNet](https://arxiv.org/abs/1608.06993). We choose two configurations: DenseNet121 and DenseNet161
+
+
+NOTICE: The MGN(reproduced) is the reproduction of [MGN](https://arxiv.org/pdf/1804.01438.pdf). To our best knowledge, the official implementation of MGN has not released yet. Hence, the **MGN_PTL**
+network used the MGN(reproduced) as backbone network. The code for MGN(reproduced) is in **mgn.py** 
+
+## RUN
+### Prerequisites
+
++ cudnn 7
++ CUDA 9
++ Pytorch v0.4.1
++ Python 2.7
++ torchvision
++ scipy
++ numpy
++ scikit_learn
+
+### Train
+We provie two training methods: plain and sif.
+
+* Train using plain method (traditional SGD optimization)
+  ```
+  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
+  ```
+* Train using sif method (our proposed SIF optimization)
+  ```
+  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
+  ``` 
 ### Results
 
 <table>
@@ -157,34 +185,6 @@ The data structure should look like:
   </tr>
 </table>
 
-
-
-NOTICE: The MGN(reproduced) is the reproduction of [MGN](https://arxiv.org/pdf/1804.01438.pdf). To our best knowledge, the official implementation of MGN has not released yet. Hence, the **MGN_PTL**
-network used the MGN(reproduced) as backbone network. The code for MGN(reproduced) is in **mgn.py** 
-
-## RUN
-### Prerequisites
-
-+ cudnn 7
-+ CUDA 9
-+ Pytorch v0.4.1
-+ Python 2.7
-+ torchvision
-+ scipy
-+ numpy
-+ scikit_learn
-
-### Train
-We provie two training methods: plain and sif.
-
-* Train using plain method (traditional SGD optimization)
-  ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
-  ```
-* Train using sif method (our proposed SIF optimization)
-  ```
-  CUDA_VISIBLE_DEVICES=0 python train_eval.py --arch mgn --mode train --usegpu --project_name 'temp_project' --data_path <path/to/Market-1501-v15.09.15> --lr 2e-4 --batchid 4 --epoch 450
-  ``` 
 ## Reference
 
 Reference to cite when you use SIF in a research paper:
